@@ -57,3 +57,6 @@ gem 'devise'
 #Validate_url
 gem "validate_url"
 
+#Nokogiri
+gem "nokogiri"
+
