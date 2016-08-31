@@ -54,3 +54,6 @@ gem 'simple_form'
 #Devise
 gem 'devise'
 
+#Validate_url
+gem "validate_url"
+
