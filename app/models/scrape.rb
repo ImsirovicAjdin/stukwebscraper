@@ -6,7 +6,7 @@ class Scrape
         begin 
             doc = Nokogiri::HTML(open("https://www.rottentomatoes.com/m/the_martian"))
             
-            docs.css('script').remove
+            doc.css('script').remove
             self.title = doc.at("//h1[@data-type = 'title']").text
             self.hotness = doc.at("#tomato_meter_link/span/span").text.to_i
             self.image_url = doc.at_css('#movie-image-section img')['src']
